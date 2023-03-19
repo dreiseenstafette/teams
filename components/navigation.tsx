@@ -31,7 +31,7 @@ export default function Navigation({ children }: any) {
             <Banner />
             <div className="z-10">
                 <Popover className="relative">
-                    <div className="mx-auto max-w-7xl px-4 sm:px-6">
+                    <div className="mx-auto max-w-5xl px-4 sm:px-6">
                         <div className="flex items-center justify-between py-8 md:py-16 px-6 align-baseline md:space-x-10">
                             <div className="flex justify-start lg:w-0 lg:flex-1">
                                 <Link href="/">

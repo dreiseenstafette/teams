@@ -110,66 +110,8 @@ export default function Footer() {
             <h2 id="footer-heading" className="sr-only">
                 Footer
             </h2>
-            <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-                <div className="sm:grid sm:grid-cols-2 xl:gap-8">
-                    <div className="grid md:grid-cols-2">
-                        <div>
-                            <h3 className="text-xl text-white">Allgemein</h3>
-                            <ul role="list" className=" mt-4 space-y-4">
-                                {navigation.about.map((item) => (
-                                    <li key={item.name}>
-                                        <Link href={item.href}>
-                                            <span className="text-base text-gray-400 hover:text-gray-100">
-                                                {item.name}
-                                            </span>
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="mt-8 md:mt-0">
-                            <h3 className="text-xl text-white">Wettkampf</h3>
-                            <ul role="list" className=" mt-4 space-y-4">
-                                {navigation.athletes.map((item) => (
-                                    <li key={item.name}>
-                                        <Link href={item.href}>
-                                            <span className="text-base text-gray-400 hover:text-gray-100">
-                                                {item.name}
-                                            </span>
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="mt-8 md:mt-0 xl:mt-0">
-                        <h3 className="text-xl text-white">Newsletter</h3>
-                        <p className="mt-4 text-base text-gray-300">
-                            Updates und Infos zum Wettkampf. Direkt in deine Inbox.
-                        </p>
-                        <form action="/api/newsletter" method="post" className="mt-4 sm:flex sm:max-w-md">
-                            <label htmlFor="email-address" className="sr-only">
-                                Email address
-                            </label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                autoComplete="email"
-                                required
-                                className="w-full min-w-0 appearance-none rounded-full border border-transparent bg-gray-700 py-2 px-4 text-base text-gray-100 placeholder-gray-300 focus:border-blue-500 focus:placeholder-gray-400 focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-blue-500"
-                                placeholder="Deine Mailadresse"
-                            />
-                            <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                                <button type="submit" className="button-inverse group">
-                                    <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
-                                    Anmelden
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div className="mt-8 pt-8 md:flex md:items-center md:justify-between">
+            <div className="mx-auto max-w-5xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+                <div className="md:flex md:items-center md:justify-between">
                     <div className="flex space-x-6 md:order-2">
                         {navigation.social.map((item) => (
                             <Link key={item.name} href={item.href}>
@@ -180,7 +122,7 @@ export default function Footer() {
                             </Link>
                         ))}
                     </div>
-                    <p className="mt-8 text-base text-gray-600 md:order-1 md:mt-0">
+                    <p className="text-base text-gray-600 md:order-1 md:mt-0">
                         &copy; 2021-{new Date().getFullYear()} Dreiseenstafette - ein Event vom <a href="https://tvhuettwilen.ch" className="link" target="_blank">TV Hüttwilen</a>
                     </p>
                 </div>
