@@ -34,7 +34,7 @@ export default function Navigation({ children }: any) {
                     <div className="mx-auto max-w-5xl px-4 sm:px-6">
                         <div className="flex items-center justify-between py-8 md:py-16 px-6 align-baseline md:space-x-10">
                             <div className="flex justify-start lg:w-0 lg:flex-1">
-                                <Link href="/">
+                                <Link href="https://dreiseenstafette.ch">
                                     <div>
                                         {isSmallScreen ? (
                                             <img className="h-8 w-auto" src={logo_small} alt="Dreiseenstafette Logo" />
@@ -80,7 +80,7 @@ export default function Navigation({ children }: any) {
                                 <div className="grid content-between h-full">
                                     <div className="flex items-center justify-between px-6 align-baseline">
                                         <div>
-                                            <Link href="/">
+                                            <Link href="https://dreiseenstafette.ch">
                                                 <div>
                                                     <img className="h-8 w-auto" src={logo_light} alt="Dreiseenstafette Logo" />
                                                 </div>
